@@ -13453,7 +13453,7 @@ function validateRangeRequestCapabilities({
 }) {
   (0, _util.assert)(rangeChunkSize > 0, "Range chunk size must be larger than zero");
   const returnValues = {
-    allowRangeRequests: false,
+    allowRangeRequests: true,
     suggestedLength: undefined
   };
   const length = parseInt(getResponseHeader("Content-Length"), 10);

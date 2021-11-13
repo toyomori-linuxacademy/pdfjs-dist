@@ -24251,7 +24251,7 @@ function validateRangeRequestCapabilities(_ref) {
       disableRange = _ref.disableRange;
   (0, _util.assert)(rangeChunkSize > 0, "Range chunk size must be larger than zero");
   var returnValues = {
-    allowRangeRequests: false,
+    allowRangeRequests: true,
     suggestedLength: undefined
   };
   var length = parseInt(getResponseHeader("Content-Length"), 10);
